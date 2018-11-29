@@ -1,0 +1,18 @@
+# This the DMSO clusterset used in JCP 135, 194113 (2011).
+
+[d1]
+    monomer
+    composition 1
+    sigma 1
+    energy 0.0
+    coordinates ../../clusters/d1_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1_MP2_TZVPP.flist
+    volume 122.6043
+
+[d2]
+    composition 2
+    sigma 1
+    energy -19.52
+    coordinates ../../clusters/d2_MP2_TZVPP.xyz
+    frequencies ../../clusters/d2_MP2_TZVPP.flist
+

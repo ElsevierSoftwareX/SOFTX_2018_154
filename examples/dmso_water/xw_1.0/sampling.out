@@ -1,0 +1,111 @@
+
+    Peacemaker 2.7 - a Quantum Cluster Equilibrium (QCE) code:               
+
+        Copyright 2004-2006 Barbara Kirchner, University of Bonn
+        Copyright 2007-2012 Barbara Kirchner, University of Leipzig          
+        Copyright 2013-2018 Barbara Kirchner, University of Bonn             
+
+        This program is free software: you can redistribute it and/or modify 
+        it under the terms of the GNU General Public License as published by 
+        the Free Software Foundation, either version 3 of the License, or    
+        (at your option) any later version.                                  
+
+        This program is distributed in the hope that it will be useful,      
+        but WITHOUT ANY WARRANTY; without even the implied warranty of       
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the        
+        GNU General Public License for more details.                         
+
+        You should have received a copy of the GNU General Public License    
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    The Peacemaker team:                                                     
+
+        * Johannes Ingenmey                                                  
+        * Eva Perlt                                                          
+        * Michael von Domaros                                                
+
+        * Barbara Kirchner                                                   
+
+    Using the following input:
+
+        [system]
+            components: 1
+
+        [ensemble]
+            pressure: 1.01325 [bar]
+            temperature: 250.000 ... 500.000 [K]
+            monomer amounts: 1.00000 [mol]
+
+        [qce]
+            amf: 0.300000 ... 2.20000 [J*m^3/mol^2]
+            bxv: 0.800000 ... 1.20000
+            maximum number of QCE iterations: 100
+            maximum number of Newton-Raphson iterations: 500
+            maximum relative deviation: 0.100000E-008
+            volume damping factor: 0.100000E-001
+
+        [reference]
+            density (weight = 1.00000): 298.150 0.997100 [K; g/cm^3]
+            phase transition (weight = 1.00000): 373.000 [K]
+
+    Using the following clusterset:
+
+        [w1] (monomer)
+            composition: 1
+            sigma: 2
+            energy: 0.00000 [kJ/mol]
+            volume: 25.9705 [A^3]
+            mass: 18.0160 [amu]
+            inertia: 1.81415 1.17649 0.637666 [amu*Angstrom^2]
+            frequencies: 1602.91 ... 3807.60 [1/cm]
+
+        [w2]
+            composition: 2
+            sigma: 1
+            energy: -17.9700 [kJ/mol]
+            volume: 51.9410 [A^3]
+            mass: 36.0320 [amu]
+            inertia: 78.0245 77.9322 2.46713 [amu*Angstrom^2]
+            frequencies: 154.020 ... 3797.53 [1/cm]
+
+        [w3]
+            composition: 3
+            sigma: 3
+            energy: -57.1700 [kJ/mol]
+            volume: 77.9115 [A^3]
+            mass: 54.0480 [amu]
+            inertia: 141.161 72.2895 72.2012 [amu*Angstrom^2]
+            frequencies: 200.640 ... 3771.00 [1/cm]
+
+        [w5]
+            composition: 5
+            sigma: 1
+            energy: -140.900 [kJ/mol]
+            volume: 129.853 [A^3]
+            mass: 90.0800 [amu]
+            inertia: 471.527 241.010 239.513 [amu*Angstrom^2]
+            frequencies: 26.5600 ... 3768.62 [1/cm]
+
+    Number of converged iterations: 251/251
+    Number of converged iterations (total): 1965581/1965581
+
+    Best isobar found for: amf = 0.360000 J*m^3/mol^2, bxv = 1.13000
+    Error: 0.277452E-004
+    Calculated phase transition: 374.500 K
+    Calculated density: 0.993719 g/cm^3
+
+    Elapsed time: 7.8 seconds
+
+    Please cite:
+
+  * Barbara Kirchner, Christian Spickermann, Sebastian B.C. Lehmann, Eva Perlt,
+    Johanna Langner, Michael von Domaros, Patricia Reuther, Frank Uhlig, Miriam Kohagen,
+    Marc Brüssel, What can clusters tell us about the bulk?: Peacemaker: Extended quantum
+    cluster equilibrium calculations, Computer Physics Communications, Volume 182,
+    Issue 7, July 2011, Pages 1428-1446, http://dx.doi.org/10.1016/j.cpc.2011.03.011.
+
+  * Marc Brüssel, Eva Perlt, Sebastian B.C. Lehmann, Michael von Domaros,
+    Barbara Kircher, Binary systems from quantum cluster equilibrium theory, The Journal
+    of Chemical Physics, Volume 135, November 2011, Page 194113,
+    http://dx.doi.org/10.1063/1.3662071
+

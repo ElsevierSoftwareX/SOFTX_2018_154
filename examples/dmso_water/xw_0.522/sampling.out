@@ -1,0 +1,194 @@
+
+    Peacemaker 2.7 - a Quantum Cluster Equilibrium (QCE) code:               
+
+        Copyright 2004-2006 Barbara Kirchner, University of Bonn
+        Copyright 2007-2012 Barbara Kirchner, University of Leipzig          
+        Copyright 2013-2018 Barbara Kirchner, University of Bonn             
+
+        This program is free software: you can redistribute it and/or modify 
+        it under the terms of the GNU General Public License as published by 
+        the Free Software Foundation, either version 3 of the License, or    
+        (at your option) any later version.                                  
+
+        This program is distributed in the hope that it will be useful,      
+        but WITHOUT ANY WARRANTY; without even the implied warranty of       
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the        
+        GNU General Public License for more details.                         
+
+        You should have received a copy of the GNU General Public License    
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    The Peacemaker team:                                                     
+
+        * Johannes Ingenmey                                                  
+        * Eva Perlt                                                          
+        * Michael von Domaros                                                
+
+        * Barbara Kirchner                                                   
+
+    Using the following input:
+
+        [system]
+            components: 2
+
+        [ensemble]
+            pressure: 1.01325 [bar]
+            temperature: 250.000 ... 500.000 [K]
+            monomer amounts: 0.522000 0.478000 [mol]
+
+        [qce]
+            amf_mix: 1.00000 ... 3.00000 [J*m^3/mol^2]
+            amf_pure: 0.360000 2.10000 [J*m^3/mol^2]
+            bxv_mix: 1.00000
+            bxv_pure: 1.13000 1.13000
+            maximum number of QCE iterations: 100
+            maximum number of Newton-Raphson iterations: 500
+            maximum relative deviation: 0.100000E-008
+            volume damping factor: 0.100000E-001
+
+        [reference]
+            density (weight = 1.00000): 298.150 1.09840 [K; g/cm^3]
+            phase transition (weight = 1.00000): 432.000 [K]
+
+    Using the following clusterset:
+
+        [w1] (monomer)
+            composition: 1 0
+            sigma: 2
+            energy: 0.00000 [kJ/mol]
+            volume: 25.9705 [A^3]
+            mass: 18.0160 [amu]
+            inertia: 1.81415 1.17649 0.637666 [amu*Angstrom^2]
+            frequencies: 1602.91 ... 3807.60 [1/cm]
+
+        [w2]
+            composition: 2 0
+            sigma: 1
+            energy: -17.9700 [kJ/mol]
+            volume: 51.9410 [A^3]
+            mass: 36.0320 [amu]
+            inertia: 78.0245 77.9322 2.46713 [amu*Angstrom^2]
+            frequencies: 154.020 ... 3797.53 [1/cm]
+
+        [w3]
+            composition: 3 0
+            sigma: 3
+            energy: -57.1700 [kJ/mol]
+            volume: 77.9115 [A^3]
+            mass: 54.0480 [amu]
+            inertia: 141.161 72.2895 72.2012 [amu*Angstrom^2]
+            frequencies: 200.640 ... 3771.00 [1/cm]
+
+        [w5]
+            composition: 5 0
+            sigma: 1
+            energy: -140.900 [kJ/mol]
+            volume: 129.853 [A^3]
+            mass: 90.0800 [amu]
+            inertia: 471.527 241.010 239.513 [amu*Angstrom^2]
+            frequencies: 26.5600 ... 3768.62 [1/cm]
+
+        [d1] (monomer)
+            composition: 0 1
+            sigma: 1
+            energy: 0.00000 [kJ/mol]
+            volume: 122.604 [A^3]
+            mass: 78.1280 [amu]
+            inertia: 123.038 74.7162 74.0743 [amu*Angstrom^2]
+            frequencies: 178.430 ... 3079.55 [1/cm]
+
+        [d2]
+            composition: 0 2
+            sigma: 1
+            energy: -19.5200 [kJ/mol]
+            volume: 245.209 [A^3]
+            mass: 156.256 [amu]
+            inertia: 891.641 843.177 197.174 [amu*Angstrom^2]
+            frequencies: 30.1500 ... 3079.48 [1/cm]
+
+        [d1w1]
+            composition: 1 1
+            sigma: 1
+            energy: -30.4500 [kJ/mol]
+            volume: 148.575 [A^3]
+            mass: 96.1440 [amu]
+            inertia: 210.713 207.830 121.368 [amu*Angstrom^2]
+            frequencies: 61.2400 ... 3772.67 [1/cm]
+
+        [d1w2A]
+            composition: 2 1
+            sigma: 1
+            energy: -47.3700 [kJ/mol]
+            volume: 174.545 [A^3]
+            mass: 114.160 [amu]
+            inertia: 506.486 342.409 192.824 [amu*Angstrom^2]
+            frequencies: 30.0800 ... 3771.44 [1/cm]
+
+        [d1w2B]
+            composition: 2 1
+            sigma: 1
+            energy: -60.4700 [kJ/mol]
+            volume: 174.545 [A^3]
+            mass: 114.160 [amu]
+            inertia: 518.907 406.233 144.676 [amu*Angstrom^2]
+            frequencies: 39.9700 ... 3765.73 [1/cm]
+
+        [d1w3]
+            composition: 3 1
+            sigma: 1
+            energy: -93.4700 [kJ/mol]
+            volume: 200.516 [A^3]
+            mass: 132.176 [amu]
+            inertia: 614.552 488.589 305.509 [amu*Angstrom^2]
+            frequencies: 26.4800 ... 3770.21 [1/cm]
+
+        [d1w4]
+            composition: 4 1
+            sigma: 1
+            energy: -128.900 [kJ/mol]
+            volume: 226.486 [A^3]
+            mass: 150.192 [amu]
+            inertia: 909.082 591.460 453.046 [amu*Angstrom^2]
+            frequencies: 37.3600 ... 3775.02 [1/cm]
+
+        [d2w1]
+            composition: 1 2
+            sigma: 1
+            energy: -54.5400 [kJ/mol]
+            volume: 271.179 [A^3]
+            mass: 174.272 [amu]
+            inertia: 1577.05 1576.33 242.239 [amu*Angstrom^2]
+            frequencies: 15.8500 ... 3443.80 [1/cm]
+
+        [d2w2]
+            composition: 2 2
+            sigma: 2
+            energy: -83.0000 [kJ/mol]
+            volume: 297.150 [A^3]
+            mass: 192.288 [amu]
+            inertia: 1522.99 1414.96 347.662 [amu*Angstrom^2]
+            frequencies: 24.6900 ... 3600.35 [1/cm]
+
+    Number of converged iterations: 251/251
+    Number of converged iterations (total): 50451/50451
+
+    Best isobar found for: amf_mix = 1.70000 J*m^3/mol^2, bxv_mix = 1.00000
+    Error: 0.423176E-001
+    Calculated phase transition: 437.500 K
+    Calculated density: 0.911295 g/cm^3
+
+    Elapsed time: 0.93 seconds
+
+    Please cite:
+
+  * Barbara Kirchner, Christian Spickermann, Sebastian B.C. Lehmann, Eva Perlt,
+    Johanna Langner, Michael von Domaros, Patricia Reuther, Frank Uhlig, Miriam Kohagen,
+    Marc Brüssel, What can clusters tell us about the bulk?: Peacemaker: Extended quantum
+    cluster equilibrium calculations, Computer Physics Communications, Volume 182,
+    Issue 7, July 2011, Pages 1428-1446, http://dx.doi.org/10.1016/j.cpc.2011.03.011.
+
+  * Marc Brüssel, Eva Perlt, Sebastian B.C. Lehmann, Michael von Domaros,
+    Barbara Kircher, Binary systems from quantum cluster equilibrium theory, The Journal
+    of Chemical Physics, Volume 135, November 2011, Page 194113,
+    http://dx.doi.org/10.1063/1.3662071
+

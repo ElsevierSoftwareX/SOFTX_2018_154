@@ -1,0 +1,18 @@
+# Performs parameter sampling by comparing to a liquid phase density at 298.15K and to
+# the boiling point.
+
+[system]
+    components 1
+
+[qce]
+    amf 0.3 2.2 191
+    bxv 0.8 1.2 41
+
+[ensemble]
+    temperature 250.0 500.0 251 # K
+    pressure 1.01325 # bar
+    monomer_amounts 1.0 # mol
+
+[reference]
+    density 298.15 1.0956 # K; g/cm^3
+    phase_transition 462.0 # K

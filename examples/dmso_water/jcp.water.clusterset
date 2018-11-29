@@ -1,0 +1,32 @@
+# This the Water clusterset used in JCP 135, 194113 (2011).
+
+[w1]
+    monomer
+    composition 1
+    sigma 2
+    energy 0.0
+    coordinates ../../clusters/w1_MP2_TZVPP.xyz
+    frequencies ../../clusters/w1_MP2_TZVPP.flist
+    volume 25.9705
+
+[w2]
+    composition 2
+    sigma 1
+    energy -17.97
+    coordinates ../../clusters/w2_MP2_TZVPP.xyz
+    frequencies ../../clusters/w2_MP2_TZVPP.flist
+
+[w3]
+    composition 3
+    sigma 3
+    energy -57.17
+    coordinates ../../clusters/w3_MP2_TZVPP.xyz
+    frequencies ../../clusters/w3_MP2_TZVPP.flist
+
+[w5]
+    composition 5
+    sigma 1
+    energy -140.9
+    coordinates ../../clusters/w5_MP2_TZVPP.xyz
+    frequencies ../../clusters/w5_MP2_TZVPP.flist
+

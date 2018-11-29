@@ -1,0 +1,60 @@
+# PBEh-3c water clusterset.
+
+[w1]
+    monomer
+    composition 1
+    sigma 2
+    energy 0.0
+    coordinates ../clusters/w1_PBEh-3c.xyz
+    frequencies ../clusters/w1_PBEh-3c.flist
+    volume 19.35
+
+[w2]
+    composition 2
+    sigma 1
+    energy -25.1523 
+    coordinates ../clusters/w2_PBEh-3c.xyz
+    frequencies ../clusters/w2_PBEh-3c.flist
+
+[w3]
+    composition 3
+    sigma 1
+    energy -78.2887
+    coordinates ../clusters/w3_PBEh-3c.xyz
+    frequencies ../clusters/w3_PBEh-3c.flist
+
+[w4]
+    composition 4
+    sigma 6
+    energy -144.6565
+    coordinates ../clusters/w4_PBEh-3c.xyz
+    frequencies ../clusters/w4_PBEh-3c.flist
+
+[w5]
+    composition 5
+    sigma 1
+    energy -190.3096
+    coordinates ../clusters/w5_PBEh-3c.xyz
+    frequencies ../clusters/w5_PBEh-3c.flist
+
+[w6]
+    composition 6
+    sigma 1
+    energy -236.1745
+    coordinates ../clusters/w6_PBEh-3c.xyz
+    frequencies ../clusters/w6_PBEh-3c.flist
+
+[w7]
+    composition 7
+    sigma 1
+    energy -295.4056
+    coordinates ../clusters/w7_PBEh-3c.xyz
+    frequencies ../clusters/w7_PBEh-3c.flist
+
+[w8]
+    composition 8
+    sigma 6
+    energy -375.0029
+    coordinates ../clusters/w8_PBEh-3c.xyz
+    frequencies ../clusters/w8_PBEh-3c.flist
+

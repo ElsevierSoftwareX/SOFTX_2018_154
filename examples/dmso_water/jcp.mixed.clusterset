@@ -1,0 +1,96 @@
+# This the DMSO/Water clusterset used in JCP 135, 194113 (2011).
+
+[w1]
+    monomer
+    composition 1 0
+    sigma 2
+    energy 0.0
+    coordinates ../../clusters/w1_MP2_TZVPP.xyz
+    frequencies ../../clusters/w1_MP2_TZVPP.flist
+    volume 25.9705
+
+[w2]
+    composition 2 0
+    sigma 1
+    energy -17.97
+    coordinates ../../clusters/w2_MP2_TZVPP.xyz
+    frequencies ../../clusters/w2_MP2_TZVPP.flist
+
+[w3]
+    composition 3 0
+    sigma 3
+    energy -57.17
+    coordinates ../../clusters/w3_MP2_TZVPP.xyz
+    frequencies ../../clusters/w3_MP2_TZVPP.flist
+
+[w5]
+    composition 5 0
+    sigma 1
+    energy -140.9
+    coordinates ../../clusters/w5_MP2_TZVPP.xyz
+    frequencies ../../clusters/w5_MP2_TZVPP.flist
+
+[d1]
+    monomer
+    composition 0 1
+    sigma 1
+    energy 0.0
+    coordinates ../../clusters/d1_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1_MP2_TZVPP.flist
+    volume 122.6043
+
+[d2]
+    composition 0 2
+    sigma 1
+    energy -19.52
+    coordinates ../../clusters/d2_MP2_TZVPP.xyz
+    frequencies ../../clusters/d2_MP2_TZVPP.flist
+
+[d1w1]
+    composition 1 1
+    sigma 1
+    energy -30.45
+    coordinates ../../clusters/d1w1_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1w1_MP2_TZVPP.flist
+
+[d1w2A]
+    composition 2 1
+    sigma 1
+    energy -47.37
+    coordinates ../../clusters/d1w2A_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1w2A_MP2_TZVPP.flist
+
+[d1w2B]
+    composition 2 1
+    sigma 1
+    energy -60.47
+    coordinates ../../clusters/d1w2B_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1w2B_MP2_TZVPP.flist
+
+[d1w3]
+    composition 3 1
+    sigma 1
+    energy -93.47
+    coordinates ../../clusters/d1w3_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1w3_MP2_TZVPP.flist
+
+[d1w4]
+    composition 4 1
+    sigma 1
+    energy -128.90
+    coordinates ../../clusters/d1w4_MP2_TZVPP.xyz
+    frequencies ../../clusters/d1w4_MP2_TZVPP.flist
+
+[d2w1]
+    composition 1 2
+    sigma 1
+    energy -54.54
+    coordinates ../../clusters/d2w1_MP2_TZVPP.xyz
+    frequencies ../../clusters/d2w1_MP2_TZVPP.flist
+
+[d2w2]
+    composition 2 2
+    sigma 2
+    energy -83.00
+    coordinates ../../clusters/d2w2_MP2_TZVPP.xyz
+    frequencies ../../clusters/d2w2_MP2_TZVPP.flist

@@ -1,0 +1,93 @@
+
+    Peacemaker 2.7 - a Quantum Cluster Equilibrium (QCE) code:               
+
+        Copyright 2004-2006 Barbara Kirchner, University of Bonn
+        Copyright 2007-2012 Barbara Kirchner, University of Leipzig          
+        Copyright 2013-2018 Barbara Kirchner, University of Bonn             
+
+        This program is free software: you can redistribute it and/or modify 
+        it under the terms of the GNU General Public License as published by 
+        the Free Software Foundation, either version 3 of the License, or    
+        (at your option) any later version.                                  
+
+        This program is distributed in the hope that it will be useful,      
+        but WITHOUT ANY WARRANTY; without even the implied warranty of       
+        MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the        
+        GNU General Public License for more details.                         
+
+        You should have received a copy of the GNU General Public License    
+        along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+    The Peacemaker team:                                                     
+
+        * Johannes Ingenmey                                                  
+        * Eva Perlt                                                          
+        * Michael von Domaros                                                
+
+        * Barbara Kirchner                                                   
+
+    Using the following input:
+
+        [system]
+            components: 1
+
+        [ensemble]
+            pressure: 1.01325 [bar]
+            temperature: 250.000 ... 500.000 [K]
+            monomer amounts: 1.00000 [mol]
+
+        [qce]
+            amf: 0.300000 ... 2.20000 [J*m^3/mol^2]
+            bxv: 0.800000 ... 1.20000
+            maximum number of QCE iterations: 100
+            maximum number of Newton-Raphson iterations: 500
+            maximum relative deviation: 0.100000E-008
+            volume damping factor: 0.100000E-001
+
+        [reference]
+            density (weight = 1.00000): 298.150 1.09560 [K; g/cm^3]
+            phase transition (weight = 1.00000): 462.000 [K]
+
+    Using the following clusterset:
+
+        [d1] (monomer)
+            composition: 1
+            sigma: 1
+            energy: 0.00000 [kJ/mol]
+            volume: 122.604 [A^3]
+            mass: 78.1280 [amu]
+            inertia: 123.038 74.7162 74.0743 [amu*Angstrom^2]
+            frequencies: 178.430 ... 3079.55 [1/cm]
+
+        [d2]
+            composition: 2
+            sigma: 1
+            energy: -19.5200 [kJ/mol]
+            volume: 245.209 [A^3]
+            mass: 156.256 [amu]
+            inertia: 891.641 843.177 197.174 [amu*Angstrom^2]
+            frequencies: 30.1500 ... 3079.48 [1/cm]
+
+    Number of converged iterations: 251/251
+    Number of converged iterations (total): 1965581/1965581
+
+    Best isobar found for: amf = 2.10000 J*m^3/mol^2, bxv = 0.890000
+    Error: 0.462318E-005
+    Calculated phase transition: 461.500 K
+    Calculated density: 1.09764 g/cm^3
+
+    Elapsed time: 5.6 seconds
+
+    Please cite:
+
+  * Barbara Kirchner, Christian Spickermann, Sebastian B.C. Lehmann, Eva Perlt,
+    Johanna Langner, Michael von Domaros, Patricia Reuther, Frank Uhlig, Miriam Kohagen,
+    Marc Brüssel, What can clusters tell us about the bulk?: Peacemaker: Extended quantum
+    cluster equilibrium calculations, Computer Physics Communications, Volume 182,
+    Issue 7, July 2011, Pages 1428-1446, http://dx.doi.org/10.1016/j.cpc.2011.03.011.
+
+  * Marc Brüssel, Eva Perlt, Sebastian B.C. Lehmann, Michael von Domaros,
+    Barbara Kircher, Binary systems from quantum cluster equilibrium theory, The Journal
+    of Chemical Physics, Volume 135, November 2011, Page 194113,
+    http://dx.doi.org/10.1063/1.3662071
+
